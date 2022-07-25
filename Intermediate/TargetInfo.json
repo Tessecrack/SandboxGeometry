@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SandboxGeometry",
+			"Path": "D:\\Sandbox\\SandboxGeometry\\Source\\SandboxGeometry.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SandboxGeometryEditor",
+			"Path": "D:\\Sandbox\\SandboxGeometry\\Source\\SandboxGeometryEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Sandbox\\SandboxGeometry\\Source\\SandboxGeometry\\SandboxGeometry.Build.cs",
+		"D:\\Sandbox\\SandboxGeometry\\Source\\SandboxGeometry.Target.cs",
+		"D:\\Sandbox\\SandboxGeometry\\Source\\SandboxGeometryEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

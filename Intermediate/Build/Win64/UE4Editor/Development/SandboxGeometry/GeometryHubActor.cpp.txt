@@ -1,0 +1,5 @@
+D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\Definitions.SandboxGeometry.h
+D:\Sandbox\SandboxGeometry\Source\SandboxGeometry\Public\GeometryHubActor.h
+D:\Sandbox\SandboxGeometry\Source\SandboxGeometry\Public\BaseGeometryActor.h
+D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Inc\SandboxGeometry\BaseGeometryActor.generated.h
+D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Inc\SandboxGeometry\GeometryHubActor.generated.h

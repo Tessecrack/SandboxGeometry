@@ -1,0 +1,2 @@
+D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\Definitions.SandboxGeometry.h
+D:\Sandbox\SandboxGeometry\Source\SandboxGeometry\SandboxGeometry.h
