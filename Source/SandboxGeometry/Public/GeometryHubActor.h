@@ -7,6 +7,21 @@
 #include "BaseGeometryActor.h"
 #include "GeometryHubActor.generated.h"
 
+USTRUCT(BlueprintType)
+struct FGeometryPayload
+{
+	GENERATED_USTRUCT_BODY()
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<ABaseGeometryActor> baseGeometryActor;
+
+	UPROPERTY(EditAnywhere)
+	FGeometryData geometryData;
+
+	UPROPERTY(EditAnywhere)
+	FTransform InitialTransform;
+};
+
 UCLASS()
 class SANDBOXGEOMETRY_API AGeometryHubActor : public AActor
 {
@@ -20,17 +35,21 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<ABaseGeometryActor> baseGeometryActor;
 
 	UPROPERTY(EditAnywhere)
-	UClass* simpleClassGeometry;
+	TArray<FGeometryPayload> GeometryPayloads;
 
-	UPROPERTY(EditAnywhere)
-	ABaseGeometryActor* baseGeometryObject;
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
 
+	void InitialGenerationObjects();
+
+	void SpawnObjectsFromGeometryPayload(UWorld* world);
+
+	UFUNCTION()
+	void OnColorChanged(const FLinearColor& color, const FString& name);
+	void OnTimerFinished(AActor* actor);
 };
