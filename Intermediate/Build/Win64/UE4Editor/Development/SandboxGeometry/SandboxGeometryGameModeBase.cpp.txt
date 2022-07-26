@@ -5,3 +5,7 @@ D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Inc\SandboxGeometry\SandboxGeometryGameModeBase.generated.h
+D:\Sandbox\SandboxGeometry\Source\SandboxGeometry\Public\SandboxPawn.h
+D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Inc\SandboxGeometry\SandboxPawn.generated.h
+D:\Sandbox\SandboxGeometry\Source\SandboxGeometry\Public\SandboxPlayerController.h
+D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Inc\SandboxGeometry\SandboxPlayerController.generated.h

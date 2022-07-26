@@ -13,5 +13,9 @@ UCLASS()
 class SANDBOXGEOMETRY_API ASandboxGeometryGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
+
+public: 
+
+	ASandboxGeometryGameModeBase();
 	
 };
