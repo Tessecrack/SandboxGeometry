@@ -27,7 +27,11 @@ public:
 	UCameraComponent* CameraComponent;
 
 	UPROPERTY(EditAnywhere)
-	float Velocity = 30.0f;
+	float Velocity = 10.0f;
+
+	virtual void PossessedBy(AController* newController) override;
+	virtual void UnPossessed() override;
+
 
 protected:
 	// Called when the game starts or when spawned
@@ -39,7 +43,6 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 private: 
 	FVector velocityVector = FVector::ZeroVector;
 
@@ -47,4 +50,5 @@ private:
 
 	void MoveRight(float axisValue);
 
+	
 };

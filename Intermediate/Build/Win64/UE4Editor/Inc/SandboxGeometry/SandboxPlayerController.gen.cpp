@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeSandboxPlayerController() {}
 	SANDBOXGEOMETRY_API UClass* Z_Construct_UClass_ASandboxPlayerController();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController();
 	UPackage* Z_Construct_UPackage__Script_SandboxGeometry();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
 	void ASandboxPlayerController::StaticRegisterNativesASandboxPlayerController()
 	{
@@ -31,6 +32,12 @@ void EmptyLinkFunctionForGeneratedCodeSandboxPlayerController() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Pawns_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Pawns_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Pawns;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -46,6 +53,17 @@ void EmptyLinkFunctionForGeneratedCodeSandboxPlayerController() {}
 		{ "ModuleRelativePath", "Public/SandboxPlayerController.h" },
 	};
 #endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASandboxPlayerController_Statics::NewProp_Pawns_Inner = { "Pawns", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASandboxPlayerController_Statics::NewProp_Pawns_MetaData[] = {
+		{ "ModuleRelativePath", "Public/SandboxPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ASandboxPlayerController_Statics::NewProp_Pawns = { "Pawns", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASandboxPlayerController, Pawns), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ASandboxPlayerController_Statics::NewProp_Pawns_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASandboxPlayerController_Statics::NewProp_Pawns_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASandboxPlayerController_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASandboxPlayerController_Statics::NewProp_Pawns_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASandboxPlayerController_Statics::NewProp_Pawns,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASandboxPlayerController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASandboxPlayerController>::IsAbstract,
 	};
@@ -55,11 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeSandboxPlayerController() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ASandboxPlayerController_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ASandboxPlayerController_Statics::PropPointers),
 		0,
 		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ASandboxPlayerController_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ASandboxPlayerController_Statics::Class_MetaDataParams))
@@ -73,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeSandboxPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASandboxPlayerController, 2503858164);
+	IMPLEMENT_CLASS(ASandboxPlayerController, 2360377920);
 	template<> SANDBOXGEOMETRY_API UClass* StaticClass<ASandboxPlayerController>()
 	{
 		return ASandboxPlayerController::StaticClass();

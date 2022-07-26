@@ -25,7 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeSandboxGeometry_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x647F3AA2,
+				0xC1712E7A,
 				0x7E0E0B1D,
 				METADATA_PARAMS(nullptr, 0)
 			};

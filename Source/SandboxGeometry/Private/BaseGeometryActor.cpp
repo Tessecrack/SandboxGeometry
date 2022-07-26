@@ -20,8 +20,17 @@ void ABaseGeometryActor::BeginPlay()
 	Super::BeginPlay();
 	
 	InitialLocation = GetActorLocation();
+
+	UMaterialInstanceDynamic* dynMat = BaseMesh->CreateAndSetMaterialInstanceDynamic(0);
+
+	if (dynMat)
+	{
+		dynMat->SetVectorParameterValue("Color", GeometryData.Color);
+	}
+	/*
 	SetColor(GeometryData.Color);
 	GetWorldTimerManager().SetTimer(TimerHandle, this, &ABaseGeometryActor::OnTimerFired, GeometryData.TimerRate, true);
+	*/
 }
 
 void ABaseGeometryActor::EndPlay(const EEndPlayReason::Type endPlayReason)

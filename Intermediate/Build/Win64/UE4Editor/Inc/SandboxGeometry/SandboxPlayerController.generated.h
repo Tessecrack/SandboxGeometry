@@ -60,7 +60,10 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASandboxPlayerController)
 
 
-#define SandboxGeometry_Source_SandboxGeometry_Public_SandboxPlayerController_h_15_PRIVATE_PROPERTY_OFFSET
+#define SandboxGeometry_Source_SandboxGeometry_Public_SandboxPlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__Pawns() { return STRUCT_OFFSET(ASandboxPlayerController, Pawns); }
+
+
 #define SandboxGeometry_Source_SandboxGeometry_Public_SandboxPlayerController_h_12_PROLOG
 #define SandboxGeometry_Source_SandboxGeometry_Public_SandboxPlayerController_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
