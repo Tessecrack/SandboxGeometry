@@ -276,6 +276,8 @@
     <None Include="..\..\SandboxGeometry.uproject"/>
     <None Include="..\..\Source\SandboxGeometry.Target.cs"/>
     <None Include="..\..\Source\SandboxGeometryEditor.Target.cs"/>
+    <None Include="..\..\.gitattributes"/>
+    <None Include="..\..\.gitignore"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>
