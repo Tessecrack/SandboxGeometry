@@ -3,14 +3,14 @@
 
 #include "GeometryHubActor.h"
 
-//DEFINE_LOG_CATEGORY_STATIC(LogGeometryHub, All, All)
+DEFINE_LOG_CATEGORY_STATIC(LogGeometryHub, All, All)
 
 // Sets default values
 AGeometryHubActor::AGeometryHubActor()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	InitialGenerationObjects();
+	//InitialGenerationObjects();
 }
 
 // Called when the game starts or when spawned
@@ -21,8 +21,10 @@ void AGeometryHubActor::BeginPlay()
 
 	if (world != nullptr)
 	{
-		SpawnObjectsFromGeometryPayload(world);
+		//SpawnObjectsFromGeometryPayload(world);
 	}
+
+	DoActorSpawn();
 }
 
 // Called every frame
@@ -30,6 +32,9 @@ void AGeometryHubActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	UE_LOG(LogGeometryHub, Warning, TEXT("property pointer is valid %i is valid %i"), PropertyActor != nullptr, IsValid(PropertyActor));
+
+	UE_LOG(LogGeometryHub, Error, TEXT("none property pointer is valid %i is valid %i"), NonePropertyActor != nullptr, IsValid(NonePropertyActor));
 }
 
 void AGeometryHubActor::SpawnObjectsFromGeometryPayload(UWorld* world)
@@ -96,4 +101,18 @@ void AGeometryHubActor::OnTimerFinished(AActor* actor)
 
 	baseActor->Destroy();
 	//baseActor->SetLifeSpan(2.0);
+}
+
+void AGeometryHubActor::DoActorSpawn()
+{
+	if (!GetWorld()) 
+	{
+		return;
+	}
+
+	FTransform GeometryTransform = FTransform(FRotator::ZeroRotator, FVector(700.0f, 300.0f, 100.0f));
+	NonePropertyActor = GetWorld()->SpawnActor<ABaseGeometryActor>(baseGeometryActor, GeometryTransform);
+
+	GeometryTransform = FTransform(FRotator::ZeroRotator, FVector(700.0f, 600.0f, 100.0f));
+	PropertyActor = GetWorld()->SpawnActor<ABaseGeometryActor>(baseGeometryActor, GeometryTransform);
 }

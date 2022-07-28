@@ -41,12 +41,19 @@ protected:
 	UPROPERTY(EditAnywhere)
 	TArray<FGeometryPayload> GeometryPayloads;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+private:	
+
+	UPROPERTY()
+	ABaseGeometryActor* PropertyActor;
+
+	ABaseGeometryActor* NonePropertyActor;
+
+	void DoActorSpawn();
 
 	void InitialGenerationObjects();
-
 	void SpawnObjectsFromGeometryPayload(UWorld* world);
 
 	UFUNCTION()

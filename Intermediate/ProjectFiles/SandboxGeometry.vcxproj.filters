@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\SandboxGeometry.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{51B39D7C-7417-4BF8-BA65-9271A9128310}</UniqueIdentifier>
+      <UniqueIdentifier>{9AB38D3D-D89D-478D-A799-DCE535E88FEF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\SandboxGeometry.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{8928B3A8-0B4F-489E-8363-872CC35731C5}</UniqueIdentifier>
+      <UniqueIdentifier>{9399E26A-C4A2-4D8E-A72B-1805E1CC5CA4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -29,7 +29,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\SandboxGeometry">
-      <UniqueIdentifier>{18610B4A-915E-4F70-8C28-1DEDDDDBBDEC}</UniqueIdentifier>
+      <UniqueIdentifier>{8FE44227-7BA3-4CEF-AE50-EEE79506E392}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\SandboxGeometry\SandboxGeometry.Build.cs">
       <Filter>Source\SandboxGeometry</Filter>
@@ -47,7 +47,7 @@
       <Filter>Source\SandboxGeometry</Filter>
     </ClInclude>
     <Filter Include="Source\SandboxGeometry\Private">
-      <UniqueIdentifier>{18FB91BF-F379-4D67-949B-A3C7E4D84DEE}</UniqueIdentifier>
+      <UniqueIdentifier>{F5E591D0-BB41-4EA5-9F6B-1145D65B0449}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SandboxGeometry\Private\BaseGeometryActor.cpp">
       <Filter>Source\SandboxGeometry\Private</Filter>
@@ -62,7 +62,7 @@
       <Filter>Source\SandboxGeometry\Private</Filter>
     </ClCompile>
     <Filter Include="Source\SandboxGeometry\Public">
-      <UniqueIdentifier>{1A9D43B4-B9A8-413C-9AB9-3FC748CDC88A}</UniqueIdentifier>
+      <UniqueIdentifier>{8736D945-E13E-4D45-8C43-0012767400E0}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SandboxGeometry\Public\BaseGeometryActor.h">
       <Filter>Source\SandboxGeometry\Public</Filter>

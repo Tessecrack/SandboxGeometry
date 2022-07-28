@@ -6,10 +6,10 @@
 /NAME:"UE4Editor-SandboxGeometry.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\SandboxGeometryEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
 "D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\BaseGeometryActor.cpp.obj"
 "D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\GeometryHubActor.cpp.obj"
 "D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\SandboxPawn.cpp.obj"
+"D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\SandboxPlayerController.cpp.obj"
 "D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\SandboxGeometry.cpp.obj"
 "D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\SandboxGeometryGameModeBase.cpp.obj"
 "D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\BaseGeometryActor.gen.cpp.obj"
@@ -17,5 +17,6 @@
 "D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\SandboxGeometry.init.gen.cpp.obj"
 "D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\SandboxGeometryGameModeBase.gen.cpp.obj"
 "D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\SandboxPawn.gen.cpp.obj"
+"D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\SandboxPlayerController.gen.cpp.obj"
 "D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\Default.rc2.res"
 /OUT:"D:\Sandbox\SandboxGeometry\Intermediate\Build\Win64\UE4Editor\Development\SandboxGeometry\UE4Editor-SandboxGeometry.lib"
